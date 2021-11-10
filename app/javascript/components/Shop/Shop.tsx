@@ -38,7 +38,7 @@ const Shop = () => {
             body: JSON.stringify({review, business_id }),
         });
       }
-////////
+//////////
     return ( 
     <div className='wrapper'>
         {loaded &&
