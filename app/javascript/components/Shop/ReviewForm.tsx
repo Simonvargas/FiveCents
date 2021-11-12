@@ -1,15 +1,19 @@
 import React, {useState, Fragment} from "react";
 import './shop.css'
 import { Rating, RatingView } from 'react-simple-star-rating'
-
+import { useEffect } from "react";
+import { useHistory} from 'react-router-dom'
 const ReviewForm = ({handleChange,  shop, review, id}) => {
+    const history = useHistory()
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
     const [score, setScore] = useState('')
     const business_id = id
     const [state, setState] = useState(false)
    
-    
+    useEffect(() =>{
+        setState(true)
+    },[state])
 
     const handleSubmit = async(e) => {
         e.preventDefault()
@@ -19,10 +23,12 @@ const ReviewForm = ({handleChange,  shop, review, id}) => {
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({title, description, score, business_id  }),
       });
-      setState(!state)
       setTitle('')
       setDescription('')
       setScore('')
+      setState(!state)
+      history.go(0)
+      
     }
 
     const ratingOptions = [1,2,3,4,5].map((score1, index) => {
