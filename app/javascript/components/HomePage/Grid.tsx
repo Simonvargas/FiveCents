@@ -1,6 +1,8 @@
 import React from "react";
 
 const Grid = () => {
+
+    
     return (
         <div className='card'>
             <div className='logo'></div>

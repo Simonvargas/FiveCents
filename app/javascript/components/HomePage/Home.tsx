@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { RatingView } from 'react-simple-star-rating'
 
 const Container = styled.div`
 text-align: center;
@@ -90,7 +91,9 @@ const Home = () => {
                     <img src={shop.image_url} className='logo'></img>
                     </Logo>
                     <ShopName>{shop.name}</ShopName>
-                    <div className='score'>{shop.avg_score}</div>
+                    {/* <div className='score'>{(Math.round(shop.avg_score * 100) / 100).toFixed(2)}</div> */}
+                    <RatingView ratingValue={(Math.round(shop.avg_score * 100) / 100).toFixed(2)} size={30} className="foo" />
+
                     <LinkWrapper >
                         <Link to={`/${shop.id}`}>View Shop</Link>
                     </LinkWrapper>

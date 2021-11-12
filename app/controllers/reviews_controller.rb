@@ -3,8 +3,7 @@ class ReviewsController < ApplicationController
     before_action :set_review, only: [:show, :update, :destroy]
 
             def create
-              @new_review = Review.create
-              json_response(@review)
+              @review = Review.create!(review_params)
             end
 
             def destroy
@@ -15,7 +14,7 @@ class ReviewsController < ApplicationController
             private
 
             def review_params
-                params.require(:review).permit(:title, :description, :score, :airline_id)
+                params.require(:review).permit(:title, :description, :score, :business_id)
             end
 
             def set_review
