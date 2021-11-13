@@ -26,7 +26,7 @@ View all the businesses listed on the home page
 ![Home](./readme-assets/images/home.jpg)
 
 
-### View business && Createa a Review
+### View business && Create a Review
 Be able to view specific business, the reviews other have left, and leave your own review
 ![Reviews](./readme-assets/images/reviews.jpg)
 
