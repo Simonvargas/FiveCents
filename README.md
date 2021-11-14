@@ -1,6 +1,6 @@
 # README
 <p align='center'>
-  <img src='./react-app/src/assets/images/logo.png' height='200px'>
+  <img src='./readme-assets/images/logo.png' height='200px'>
 </p>
 
 # FiveCents
