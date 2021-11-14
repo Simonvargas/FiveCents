@@ -1,7 +1,7 @@
-# README
+<!-- # README
 <p align='center'>
-  <img src='./readme-assets/images/logo.png' height='200px'>
-</p>
+<!--   <img src='./readme-assets/images/logo.png' height='200px'> -->
+<!-- </p> --> -->
 
 # FiveCents
 
