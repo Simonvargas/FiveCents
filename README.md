@@ -1,8 +1,3 @@
-# README
-<p align='center'>
-  <img src='./react-app/src/assets/images/logo.png' height='200px'>
-</p>
-
 # FiveCents
 
 FiveCents is a business reviews app built using Ruby on Rails on the backend and React Typescript on the frontend. Come leave a review!
@@ -26,7 +21,7 @@ View all the businesses listed on the home page
 ![Home](./readme-assets/images/home.jpg)
 
 
-### View business && Createa a Review
+### View business && Create a Review
 Be able to view specific business, the reviews other have left, and leave your own review
 ![Reviews](./readme-assets/images/reviews.jpg)
 
